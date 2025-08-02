@@ -11,7 +11,7 @@ import joblib
 import xgboost as xgb
 
 
-data = pd.read_csv('everything2.csv')
+data = pd.read_csv('./data/dataset.csv')
 real_data = pd.read_csv('./data/real_data/real_models.csv').dropna()
 
 X = data[['Total Parameters', 'Total MACs'] + [f'K{k}x{k} MAC Percentage' for k in range(1,8)]]
