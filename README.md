@@ -24,7 +24,7 @@ To train the predictive model, a dataset of arbitrary model architectures was cr
 
 - [Jetson Nano energy and latency dataset](data/dataset.csv)
 
-- The link to the TRT dataset will be available shortly.
+- The dataset of models in the TRT format is available upon request.
 
 # Repository Structure
 Below is a basic overview of the structure of the repository
