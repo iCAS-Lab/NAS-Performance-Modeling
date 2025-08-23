@@ -63,7 +63,7 @@ for index, row in real_data.iterrows():
         print(f"{label}: {per_error}")
     print('')
 
-joblib.dump(grid_search, 'best_single_model.joblib')
+joblib.dump(grid_search.best_estimator_, 'random_forest.joblib')
 print("GridSearchCV model saved!")
 
 best_model = grid_search.best_estimator_

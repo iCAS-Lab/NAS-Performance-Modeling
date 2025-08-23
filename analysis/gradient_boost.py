@@ -72,7 +72,7 @@ for index, row in real_data.iterrows():
         print(f"{label}: {per_error}")
     print('')
 
-joblib.dump(grid_search, 'predictive_model.joblib')
+joblib.dump(grid_search.best_estimator_, 'gradient_boost.joblib')
 print("GridSearchCV model saved!")
 
 best_model = grid_search.best_estimator_
